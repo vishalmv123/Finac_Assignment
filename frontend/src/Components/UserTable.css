@@ -1,0 +1,122 @@
+/* Basic styles */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 16px;
+    min-width: 600px; /* Ensures the table maintains a minimum width */
+  }
+  
+  .table-header {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+  
+  .table-header th {
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .table-row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .table-cell {
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Button styles */
+  .update-button, .delete-button {
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-button {
+    background-color: #4CAF50;
+  }
+  
+  .update-button:hover {
+    background-color: #45A049;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+  }
+  
+  .delete-button:hover {
+    background-color: #e53935;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .table-container {
+      margin: 10px 0;
+    }
+  
+    .user-table {
+      font-size: 14px;
+    }
+  
+    .table-header th, .table-cell {
+      padding: 8px;
+    }
+  
+    .about-textarea {
+      max-width: 100px; /* Constrain the textarea size on smaller screens */
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+    }
+  
+    .update-button, .delete-button {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .user-table {
+      min-width: 100%; /* Allow the table to shrink */
+    }
+  
+    .table-row {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .table-cell {
+      width: 100%;
+      padding: 10px 5px;
+      box-sizing: border-box;
+    }
+  
+    .action-buttons {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  
